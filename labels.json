@@ -1,0 +1,13 @@
+{
+  "submit": "Show Licence",
+  "formtext": "Please Enter VIN: ",
+  "country": "Country: ",
+  "state": "State: ",
+  "city": "City: ",
+  "stateError": "No States available",
+  "cityError": "No Cities are found",
+  "vinNumber": "Enter VIN number: ",
+  "carType": "Car Types: ",
+  "carBody": "Car Body: ",
+  "carLabel" : "Car Labels: "
+}

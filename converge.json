@@ -1,0 +1,85 @@
+{
+  "conversions": {
+    "series": [
+      "WDD007",
+      "WDP008",
+      "WER005",
+      "WER003",
+      "WER002",
+      "WER001"
+    ],
+    "modelRangeList": [
+      {
+        "WDD007": "Sprinter 9007"
+      },
+      {
+        "WDP008": "Sprinter 9007"
+      },
+      {
+        "WER005": "Sprinter 7005"
+      },
+      {
+        "WER003": "Sprinter 7005"
+      },
+      {
+        "WER002": "Sprinter 7002"
+      },
+      {
+        "WER001": "Sprinter 7001"
+      }
+    ],
+    "conversionList": [
+      {
+        "Sprinter 9007": [
+          "car",
+          "motor",
+          "VAN",
+          "Ambulance"
+        ]
+      },
+      {
+        "Sprinter 7005": [
+          "car5",
+          "motor5",
+          "VAN5",
+          "Ambulance5"
+        ]
+      },
+      {
+        "Sprinter 7002": [
+          "car2",
+          "motor2",
+          "VAN2",
+          "Ambulance2"
+        ]
+      },
+      {
+        "Sprinter 7001": [
+          "car1",
+          "motor1",
+          "VAN1",
+          "Ambulance1"
+        ]
+      }
+    ],
+    "bodyBuilderList": [
+      {
+        "Ambulance5": [
+          "Apple",
+          "Google"
+        ]
+      },
+      {
+        "School Van": [
+          "microsoft"
+        ]
+      },
+      {
+        "Refrigerator": [
+          "Ford",
+          "Audi"
+        ]
+      }
+    ]
+  }
+}

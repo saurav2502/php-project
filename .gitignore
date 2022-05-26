@@ -1,0 +1,8 @@
+# Project exclude paths
+/vendor/composer/
+/vendor/setasign/fpdf/
+/vendor/setasign/fpdi/
+/vendor/setasign/fpdi-fpdf/
+/vendor/setasign/fpdi-tcpdf/
+/vendor/setasign/tcpdf/
+/vendor/tecnickcom/tcpdf/

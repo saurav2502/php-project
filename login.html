@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<script src="angular.min.js" type="text/javascript"></script>
+<script src="https://unpkg.com/pdf-lib/dist/pdf-lib.js" type="text/javascript"></script>
+<script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js" type="text/javascript"></script>
+<script src="jquery.min.js" type="text/javascript"></script>
+<script src="login.js" type="text/javascript"></script>
+<body ng-app="app" ng-controller="vinAppCtrl">
+    <div class="container">
+        <h2>Custom Texts</h2><br>
+        <div class="row">
+            <label for="vin" ng-bind-html="formtext"></label>
+            <input type="text" id="vin" ng-model="vin">
+            <input type="submit" value="{{submit}}" ng-click="showFile()">
+        </div>
+        <div class="row" >
+            <label for="country" ng-bind-html="country"></label>
+            <select id="country" class="list-container" ng-model="countryId" ng-change="countryId && getStatesByCountry(countryId)"></br>
+                <option value="">--Select Country--</option>
+                <option ng-repeat="option in countryList" value="{{option.country_id}}">{{option.country_name}}</option>
+            </select>
+            <!--<select name="country" id="country" class="list-container" ng-model="selectedCar" ng-click="showCountry()">
+                &lt;!&ndash;<option value="0">Select Country</option>&ndash;&gt;
+                <option ng-repeat="x in country_list" value="{{opt.country_id}}">{{x.country_name}}</option>
+            </select>-->
+        </div>
+        <div class="row">
+            <label for="state" ng-bind-html="state"></label>
+            <select id="state" class="list-container" ng-model="stateId"  ng-change="stateId && getCityByState(stateId)"></br>
+                <option value="">--Select State--</option>
+                <option ng-repeat="option in stateList" value="{{option.state_id}}">{{option.state_name}}</option>
+            </select>
+            <div class="no_rocord" ng-show="nodata">{{stateError}}</div>
+        </div>
+        <div class="row">
+            <label for="city" ng-bind-html="city"></label>
+            <select id="city" class="list-container" ng-model="cityId"></br>
+                <option value="">--Select City--</option>
+                <option ng-repeat="option in cityList" value="{{option.city_id}}">{{option.city_name}}</option>
+            </select>
+            <div class="no_rocord" ng-show="nodata">cityError: {{cityError}}</div>
+        </div>
+        <button id="Submit" ng-click="mergerFile()">Submit</button>
+    </div>
+</body>
+</html>

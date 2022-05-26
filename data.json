@@ -1,0 +1,17 @@
+{
+  "daten": {
+    "code": "1MB,4JG,WDB,WDC",
+    "series1": {
+      "0": {
+        "seria": "231",
+        "file": "abc.txt",
+        "type": ""
+      },
+      "1": {
+        "seria": "1234",
+        "file": "abcd.txt",
+        "type": ""
+      }
+    }
+  }
+}
